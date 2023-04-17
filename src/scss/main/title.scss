@@ -1,0 +1,187 @@
+.text-zone {
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  letter-spacing: -6px;
+  padding-left: 5rem;
+  .blast:hover {
+    transform: translateY(3.3px);
+  }
+  .hello {
+    display: flex;
+  }
+  .blast {
+    display: inline-block;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    color: #fff;
+    margin: 0;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 6.7rem;
+  }
+  .main__title-name {
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    margin-left: 3%;
+  }
+  .animation-logo {
+    width: 33px;
+    height: 52px;
+    object-fit: cover;
+    -moz-transform: scale(1.5);
+    transform: scale(1.6);
+    zoom: 200%;
+    @media (max-width: 1300px) {
+      
+    }
+  }
+  .space {
+    margin: 0 3% 0 0;
+  }
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .web-dev {
+    display: flex;
+    width: max-content;
+  }
+  .ruberBand {
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+  }
+  .gray-text {
+    font-size: 1.6rem;
+    letter-spacing: 4px;
+    margin-top: 1rem;
+    display: block;
+    color: #8d8d8d;
+  }
+  .contact {
+    color: #08fdd8;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin-top: 20px;
+    position: relative;
+    font-weight: 600;
+    width: 100%;
+    max-width: 220px;
+    height: 50px;
+    cursor: pointer;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    border: 1px solid #08fdd8;
+    & > div {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    &:hover{
+      color: black;
+      background-color: #08fdd8;
+    }
+  }
+  @media (max-width: 1080px) {
+    .blast{
+      font-size: 10.9vw;
+      line-height: 10.11vw;
+      letter-spacing: 0.4vw;
+    }
+    .animation-logo{
+      width: 2.3vw;
+      zoom: 500%;
+      margin-right: -1px;
+      height: 2.09vw;
+      object-fit: cover;
+    }
+  }
+}
+.main__title {
+  height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  .scroll-down--left {
+    left: 10px;
+    right: auto;
+    width: 330px;
+  }
+  .scroll-down:nth-child(2){
+    width: 40px;
+  }
+  .scroll-down {
+    z-index: -1;
+    position: absolute;
+    right: 10px;
+    bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 1.2vw;
+    color: #fff;
+    span {
+      -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      -webkit-animation-name: bounce-1;
+      animation-name: bounce-1;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      transition: all 1s ease;
+      animation: move 1s infinite linear;
+    }
+    @keyframes move {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(19px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    svg {
+      margin-top: 23.2px;
+      width: 1.3vw;
+      transform: translateX(-1px);
+    }
+  }
+  @media (max-width: 1300px) {
+    .scroll-down--left {
+      width: 30px;
+    }
+  }
+}

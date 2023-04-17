@@ -1,0 +1,74 @@
+.main {
+  font-family: "Schibsted Grotesk", sans-serif;
+  width: 100%;
+  #sound {
+    border-radius: 3px;
+    padding: 5px;
+    right: 20px;
+    position: fixed;
+    z-index: 999999;
+    top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    background: rgba(29, 29, 29, 0.8);
+    @media (max-width: 1300px) {
+      top: 1rem;
+      right: auto;
+      left: 10px;
+      font-size: 15px;
+    }
+    svg{
+      height: 20px;
+      margin-right: 5px;
+      color: #FD1056;
+    }
+    &::after{
+      content: "OFF";
+      color: #FD1056;
+    }
+    a{
+      color: #FD1056;
+      -webkit-transition: none;
+      -o-transition: none;
+      transition: none;
+      margin-left: 5px;
+      pointer-events: auto;
+    }
+  }
+  .mbtn{
+    display: none;
+    @media (max-width: 1300px) {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      width: 2.3rem;
+      height: 2.2rem;
+      z-index: 100;
+      padding: 5.3px;
+      background-color: rgba(0,0,0,0.3);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      border-radius: 3px;
+      a{
+        width: 3rem;
+      }
+    }
+  }
+}
+
+@import "title.scss";
+@import "seeportfolio.scss";

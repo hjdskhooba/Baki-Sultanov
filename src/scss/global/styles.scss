@@ -1,0 +1,17 @@
+h2 .blast, h1 .blast {
+    opacity: 1;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.blast-root{
+    color: #08fdd8;
+    font-weight: 400;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px;
+    left: -10px;
+    font-size: 7.3rem;
+    line-height: 6.7rem;
+}
