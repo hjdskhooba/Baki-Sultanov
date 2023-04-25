@@ -2,6 +2,7 @@ import gif1 from "../../assets/main/projects/7ig55j.gif"
 import gif2 from "../../assets/main/projects/7ig65l.gif"
 import gif3 from "../../assets/main/projects/7ig5vf.gif"
 import gif4 from "../../assets/main/projects/7ig4cl.gif"
+import gif5 from "../../assets/main/projects/shymbulak.png"
 
 const defaultState = [
   {
@@ -41,13 +42,13 @@ const defaultState = [
     description: "stuff-shop - Is an online-shop with lot's of cool stuff. In this project, as a package manager I use 'pnpm' So run \"pnpm i\" to install all dependencies."
   },
   {
-    id: 4,
+    id: 5,
     isOpen: false,
-    image: "https://i.ytimg.com/vi/4cTwLn-7RPk/maxresdefault.jpg",
-    link: "https://stuff-shop-six.vercel.app/",
-    example: gif4,
-    title: "Online stuff shop",
-    description: "stuff-shop - Is an online-shop with lot's of cool stuff. In this project, as a package manager I use 'pnpm' So run \"pnpm i\" to install all dependencies."
+    image: "https://shymbulakhotel.kz/wp-content/uploads/2022/12/screenshot.png",
+    link: "https://vue-weather-app-three-ecru.vercel.app/",
+    example: gif5,
+    title: "Weather app",
+    description: "Vue weather app - Vue.js weather app for Almaty"
   },
 ];
 

@@ -9,7 +9,7 @@ function Projects() {
   const [tum, setTum] = useState(false);
   const projects = useSelector((state) => state.projects);
   const choosedProject = projects.find((el) => el.id == popup.id);
-
+  
   useEffect(() => {
     projectsArr.current.childNodes.forEach((el) =>
       el.addEventListener("click", () => {

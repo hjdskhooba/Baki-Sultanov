@@ -82,7 +82,7 @@ export const Menu = () => {
         </li>
         <li>
           <a
-            href="https://www.youtube.com/channel/UCqa84f7r4QIYKV7EVgoVwgQ"
+            href="https://t.me/bakisultanovchirkin"
             target="_blank"
           >
             {" "}
