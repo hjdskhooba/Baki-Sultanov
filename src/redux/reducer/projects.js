@@ -40,6 +40,15 @@ const defaultState = [
     title: "Online stuff shop",
     description: "stuff-shop - Is an online-shop with lot's of cool stuff. In this project, as a package manager I use 'pnpm' So run \"pnpm i\" to install all dependencies."
   },
+  {
+    id: 4,
+    isOpen: false,
+    image: "https://i.ytimg.com/vi/4cTwLn-7RPk/maxresdefault.jpg",
+    link: "https://stuff-shop-six.vercel.app/",
+    example: gif4,
+    title: "Online stuff shop",
+    description: "stuff-shop - Is an online-shop with lot's of cool stuff. In this project, as a package manager I use 'pnpm' So run \"pnpm i\" to install all dependencies."
+  },
 ];
 
 export const projects = (state = defaultState, action) => {

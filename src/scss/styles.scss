@@ -39,11 +39,11 @@ body {
   background: #1d1d1d;
   display: block;
   min-width: 320px;
-  font-family: 'Schibsted Grotesk', sans-serif;
+  font-family: "Schibsted Grotesk", sans-serif;
   color: #fff;
   padding-left: 8rem;
   overflow-y: scroll;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 ul[class],
@@ -70,7 +70,7 @@ textarea,
 select {
   font: inherit;
 }
-a{
+a {
   color: #08fdd8;
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
@@ -86,17 +86,18 @@ a{
   }
 }
 @media (max-width: 1300px) {
-  body{
-    padding-left: 0.3rem
+  body {
+    padding-left: 0.3rem;
   }
 }
 @media (max-width: 1084px) {
-  body{
+  body {
     padding-left: 0rem;
-    .text-zone{
-      padding-left: 34px
+    .text-zone {
+      padding-left: 34px;
     }
   }
 }
+
 @import "./main/main.scss";
 @import "./layout/menu.scss";
