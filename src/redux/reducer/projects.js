@@ -1,18 +1,21 @@
-import gif1 from "../../assets/main/projects/7ig55j.gif"
-import gif2 from "../../assets/main/projects/7ig65l.gif"
-import gif3 from "../../assets/main/projects/7ig5vf.gif"
-import gif4 from "../../assets/main/projects/7ig4cl.gif"
-import gif5 from "../../assets/main/projects/shymbulak.png"
+import gif1 from "../../assets/main/projects/7ig55j.gif";
+import gif2 from "../../assets/main/projects/7ig65l.gif";
+import gif3 from "../../assets/main/projects/7ig5vf.gif";
+import gif4 from "../../assets/main/projects/7ig4cl.gif";
+import gif5 from "../../assets/main/projects/shymbulak.png";
+import gif6 from "../../assets/main/projects/7kmag4.gif";
 
 const defaultState = [
   {
     id: 1,
     isOpen: false,
-    image: "https://millor-shop.ru/wp-content/themes/millornew/img/icons/logo.png",
+    image:
+      "https://millor-shop.ru/wp-content/themes/millornew/img/icons/logo.png",
     link: "https://miller-shop.netlify.app/",
     example: gif1,
     title: "Online coffee shop",
-    description: "A website where people can order coffee drinks to go from a coffee shop. Users can order coffee as a guest or use their created account. Authenticated users can also view their previous orders."
+    description:
+      "A website where people can order coffee drinks to go from a coffee shop. Users can order coffee as a guest or use their created account. Authenticated users can also view their previous orders.",
   },
   {
     id: 2,
@@ -21,7 +24,8 @@ const defaultState = [
     link: "https://pet-project-sneakers.vercel.app/",
     example: gif2,
     title: "Online sneakers shop",
-    description: "Sneakers-shop - Javascript app with registration and admin panel.\n No frameworks, only JS. To start this project - first you have to start our json-database. Run \" npm start \" in terminal Then run index.html file to open project in browser"
+    description:
+      'Sneakers-shop - Javascript app with registration and admin panel.\n No frameworks, only JS. To start this project - first you have to start our json-database. Run " npm start " in terminal Then run index.html file to open project in browser',
   },
   {
     id: 3,
@@ -30,7 +34,8 @@ const defaultState = [
     link: "https://crypter-three.vercel.app/",
     example: gif3,
     title: "NFT Marketplace",
-    description: "Crypter is a cross-platform crypto app that makes encryption and decryption convenient while still upholding strong security. It tackles one of the weakest links in most security systems today - weak passwords."
+    description:
+      "Crypter is a cross-platform crypto app that makes encryption and decryption convenient while still upholding strong security. It tackles one of the weakest links in most security systems today - weak passwords.",
   },
   {
     id: 4,
@@ -39,16 +44,27 @@ const defaultState = [
     link: "https://stuff-shop-six.vercel.app/",
     example: gif4,
     title: "Online stuff shop",
-    description: "stuff-shop - Is an online-shop with lot's of cool stuff. In this project, as a package manager I use 'pnpm' So run \"pnpm i\" to install all dependencies."
+    description:
+      "stuff-shop - Is an online-shop with lot's of cool stuff. In this project, as a package manager I use 'pnpm' So run \"pnpm i\" to install all dependencies.",
   },
   {
     id: 5,
     isOpen: false,
-    image: "https://shymbulakhotel.kz/wp-content/uploads/2022/12/screenshot.png",
+    image:
+      "https://shymbulakhotel.kz/wp-content/uploads/2022/12/screenshot.png",
     link: "https://vue-weather-app-three-ecru.vercel.app/",
     example: gif5,
     title: "Weather app",
-    description: "Vue weather app - Vue.js weather app for Almaty"
+    description: "Vue weather app - Vue.js weather app for Almaty",
+  },
+  {
+    id: 6,
+    isOpen: false,
+    image: "https://i.ytimg.com/vi/P8xEEmOfJxk/hqdefault.jpg",
+    link: "https://vue3-fire-links.vercel.app/#/",
+    example: gif6,
+    title: "FireLinks",
+    description: "FireLinks app - Vue.js FireLinks app with Firebase",
   },
 ];
 

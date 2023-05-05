@@ -3,9 +3,9 @@ const defaultState = {isOpen: false, id: 1}
 export default (state = defaultState, action)=>{
     switch(action.type){
     case "GET_POPUP":
-        return {...state, id: action.payload}
+        return {...state, id: action.payload}    
     default:
-        return state
+        return state;
     }
 }
 

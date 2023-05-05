@@ -1,10 +1,15 @@
 import React from "react";
-import { Title } from "./Title";
-import { SeePortfolio } from "./SeePortfolio";
-import Projects from "./Projects";
+import Title from "./Title";
+import SeePortfolio from "./SeePortfolio";
+import Projects from "../Projects";
+import About from "../About";
+import { useDispatch, useSelector } from "react-redux";
+import { openMenu } from "../../redux/reducer/menu";
 
-export const Main = () => {
-  
+const Main = () => {
+  const menuIsOpened = useSelector(state => state.menu.open);
+  const dispatch = useDispatch();
+  const showMenu = ()=>dispatch(openMenu());
   return (
     <div className="main">
       <div id="sound">
@@ -25,11 +30,9 @@ export const Main = () => {
             className=""
           ></path>
         </svg>{" "}
-        Sound <a href=""
-        ></a>
+        Sound <a href=""></a>
       </div>
-      <div className="mbtn mbtn-op"
-      >
+      <div className={`mbtn ${menuIsOpened ? "mbtn-cl" : "mbtn-op"}`} onClick={showMenu}>
         <svg
           aria-hidden="true"
           focusable="false"
@@ -45,10 +48,13 @@ export const Main = () => {
             d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
           ></path>
         </svg>
-      </div> 
+      </div>
       <Title />
       <SeePortfolio />
       <Projects />
+      <About />
     </div>
   );
 };
+
+export default Main;

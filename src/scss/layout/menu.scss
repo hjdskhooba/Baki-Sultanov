@@ -129,6 +129,10 @@
     opacity: 0;
     -webkit-transition: opacity 0s 0.4s, z-index 0s 0.7s;
     -o-transition: opacity 0s 0.4s, z-index 0s 0.7s;
-    transition: opacity 0s 0.4s, z-index 0s 0.7s;
+    transition: opacity 0.4s, z-index 0.7s;
+    &.open{
+      z-index: 491;
+      opacity: 1;
+    }
   }
 }

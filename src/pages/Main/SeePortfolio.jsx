@@ -1,6 +1,6 @@
 import React from "react";
 
-export const SeePortfolio = () => {
+const SeePortfolio = () => {
   return (
     <section
       id="section-work"
@@ -73,3 +73,5 @@ export const SeePortfolio = () => {
     </section>
   );
 };
+
+export default SeePortfolio

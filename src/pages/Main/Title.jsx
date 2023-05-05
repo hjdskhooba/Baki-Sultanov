@@ -1,7 +1,7 @@
 import React from "react";
 import nameFirstLetter from "../../assets/main/title/channels4_profile-removebg-preview.png";
 
-export const Title = () => {
+const Title = () => {
   let letter = document.querySelectorAll(".blast");
   return (
     <section className="main__title">
@@ -91,3 +91,5 @@ export const Title = () => {
     </section>
   );
 };
+
+export default Title

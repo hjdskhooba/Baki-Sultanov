@@ -1,19 +1,12 @@
 import React from "react";
 import nameFirstLetter from "../assets/main/title/channels4_profile-removebg-preview.png";
-import linkedInIcon from "../assets/layout/menu/linkedId.svg";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-export const Menu = () => {
-  // const [navigation, setNavigation] = useState({
-  //     "nav": [
-  //         "About me",
-  //         "Professional experience",
-  //         "Contacts",
-  //         "My completed projects"
-  //     ]
-  // })
+const Menu = () => {
+  const menuIsOpen = useSelector((state) => state.menu).open;
   return (
-    <div className="menu">
+    <div className={`menu ${menuIsOpen ? "open" : "closed"}`}>
       <div className="menu__title">
         <img src={nameFirstLetter} alt="" className="menu__title-logo" />
         <h2 className="menu-name">Baki</h2>
@@ -21,16 +14,16 @@ export const Menu = () => {
       </div>
       <nav className="menu__navigation">
         {" "}
-        <Link rel="about" to="../pages/About.jsx">
+        <Link rel="about" to="/about-me">
           About
         </Link>{" "}
-        <Link rel="skills" to="../pages/Skills.jsx">
+        <Link rel="skills" to="/my-skills">
           My Skills
         </Link>{" "}
-        <Link rel="work" to="../pages/Projects.jsx">
+        <Link rel="work" to="/projects">
           Work
         </Link>{" "}
-        <Link rel="contact" to="../pages/Contacts.jsx">
+        <Link rel="contact" to="/contact-me">
           Contact
         </Link>{" "}
       </nav>
@@ -81,10 +74,7 @@ export const Menu = () => {
           </a>
         </li>
         <li>
-          <a
-            href="https://t.me/bakisultanovchirkin"
-            target="_blank"
-          >
+          <a href="https://t.me/bakisultanovchirkin" target="_blank">
             {" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -104,3 +94,5 @@ export const Menu = () => {
     </div>
   );
 };
+
+export default Menu;

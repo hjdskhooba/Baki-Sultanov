@@ -24,17 +24,17 @@
       left: 10px;
       font-size: 15px;
     }
-    svg{
+    svg {
       height: 20px;
       margin-right: 5px;
-      color: #FD1056;
+      color: #fd1056;
     }
-    &::after{
+    &::after {
       content: "OFF";
-      color: #FD1056;
+      color: #fd1056;
     }
-    a{
-      color: #FD1056;
+    a {
+      color: #fd1056;
       -webkit-transition: none;
       -o-transition: none;
       transition: none;
@@ -42,7 +42,8 @@
       pointer-events: auto;
     }
   }
-  .mbtn{
+  .mbtn {
+    cursor: pointer;
     display: none;
     @media (max-width: 1300px) {
       position: fixed;
@@ -52,7 +53,7 @@
       height: 2.2rem;
       z-index: 100;
       padding: 5.3px;
-      background-color: rgba(0,0,0,0.3);
+      background-color: rgba(0, 0, 0, 0.3);
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -63,13 +64,45 @@
       -ms-flex-pack: center;
       justify-content: center;
       border-radius: 3px;
-      a{
+      a {
         width: 3rem;
       }
+    }
+  }
+  .mbtn-cl {
+    width: 2.3rem;
+    height: 2.2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    position: fixed;
+    z-index: 492;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 3px;
+    -webkit-text-fill-color: #fff;
+    &:after {
+      // position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: "\2715"; /* use the hex value here... */
+      font-size: 35px;
+      -webkit-text-fill-color: #fff;
+      // line-height: 100px;
+      text-align: center;
     }
   }
 }
 
 @import "title.scss";
 @import "seeportfolio.scss";
-@import "projects.scss";
+@import "../Components/projects.scss";
+@import "../Components/about.scss";
