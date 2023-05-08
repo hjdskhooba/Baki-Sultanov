@@ -1,0 +1,70 @@
+.skills-component {
+  padding-top: 5rem;
+  padding-left: 5rem;
+  .skill-title2,
+  .skill-title3 {
+    background-color: #173459;
+    width: fit-content;
+    padding: 0 19px;
+    margin: 12px 0 7px;
+  }
+  .skill-progress {
+    display: "block";
+    transform: translateY(2.22px);
+    background: white;
+    font-size: 9.22px;
+    text-align: center;
+    color: black;
+    width: 0;
+    font-weight: 800;
+    height: 30.22px;
+    font-size: 82%;
+    border-radius: 32px;
+  }
+  .skill-title3 {
+    color: black;
+    background: rgb(30, 92, 196);
+    background: -moz-linear-gradient(
+      90deg,
+      rgba(30, 92, 196, 1) 42%,
+      rgba(152, 191, 255, 1) 58%
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      rgba(30, 92, 196, 1) 42%,
+      rgba(152, 191, 255, 1) 58%
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(30, 92, 196, 1) 42%,
+      rgba(152, 191, 255, 1) 58%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e5cc4",endColorstr="#98bfff",GradientType=1);
+  }
+  .skill-title,
+  .skill-title2,
+  .skill-title3,
+  .skill-titlee {
+    border-radius: 9.2px;
+    font-weight: 700;
+  }
+  .skill-titlee {
+    background-color: #4cb8d2;
+    width: fit-content;
+    padding: 0 19px;
+    color: black;
+    margin: 12px 0 7px;
+  }
+
+  .skill-title {
+    color: black;
+    background: #f7df1e;
+    width: fit-content;
+    padding: 0 19px;
+    margin-bottom: 4px;
+  }
+  @media (max-width: 1300px) {
+    padding-top: 7rem;
+    padding-left: 1rem;
+  }
+}

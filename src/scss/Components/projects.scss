@@ -76,12 +76,9 @@
     width: 60.46%;
     height: 74%;
     font-size: 3vw;
-    top: 1vh;
   }
   margin: -70px 0 0;
-  width: 45vw;
-  height: 30vw;
-  top: 1vh;
+  top: 8vw;
   position: absolute;
   left: auto;
   right: auto;
@@ -93,8 +90,14 @@
   z-index: 400;
   overflow: hidden;
   -webkit-text-fill-color: white;
+  width: 38vw;
+  height: 26vw;
   @media (max-width: 1300px) {
     font-size: 3vw;
+  }
+  @media (min-width: 2200px) {
+    width: 38rem;
+    height: 26rem;
   }
 }
 .popup-window.show {
@@ -119,6 +122,9 @@
 /* @media (max-width: 1300px) { */
 .tile h1 {
   font-size: 2vw;
+  @media (min-width: 2140px) {
+    font-size: xx-large;
+  }
 }
 /* } */
 

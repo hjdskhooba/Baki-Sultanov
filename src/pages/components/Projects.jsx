@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setPopup } from "../../redux/reducer/popup"
+import { setPopup } from "../../redux/reducer/popup";
 const Projects = () => {
   const dispatch = useDispatch();
   const popup = useSelector((state) => state.popup);
@@ -57,6 +57,6 @@ const Projects = () => {
       </div>
     </>
   );
-}
+};
 
 export default Projects;

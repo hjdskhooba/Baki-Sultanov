@@ -1,8 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="about-page">
+    <motion.div
+      className="about-page"
+      animate={{ x: 0 }}
+      initial={{ x: -102 }}
+      transition={{ duration: 1 }}
+    >
       <div className="section-full page-about js-page-about">
         <div className="text-zone">
           <header>
@@ -52,7 +58,7 @@ const About = () => {
           <div className="clear"></div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

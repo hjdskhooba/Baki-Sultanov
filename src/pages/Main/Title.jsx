@@ -1,9 +1,16 @@
 import React from "react";
 import nameFirstLetter from "../../assets/main/title/channels4_profile-removebg-preview.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Title = () => {
-  let letter = document.querySelectorAll(".blast");
+  const [rotate, setRotate] = useState(0);
+  const [move, setMove] = useState(0);
+  const animatedClick = () => {
+    setRotate(Math.random() * 500 - 222);
+    setMove(Math.random() * 360);
+  };
   return (
     <section className="main__title">
       <div className="text-zone">
@@ -16,13 +23,29 @@ const Title = () => {
             <span className="blast">’</span>
             <span className="blast">m</span>{" "}
             <div className="main__title-name">
-              <img
-                width="53"
-                height="72"
-                src={nameFirstLetter}
-                alt="Web Developer Name"
-                className="animation-logo"
-              />
+              <motion.div
+                onClick={animatedClick}
+                initial={{
+                  opacity: 0,
+                  y: -29,
+                }}
+                animate={{
+                  opacity: 45,
+                  y: 0,
+                  bounce: 0.9,
+                  rotate: rotate,
+                  x: move,
+                }}
+                transition={{ duration: 0.9, type: "spring" }}
+              >
+                <img
+                  width="53"
+                  height="72"
+                  src={nameFirstLetter}
+                  alt="Web Developer Name"
+                  className="animation-logo"
+                />
+              </motion.div>
               <span className="blast">a</span>
               <span className="blast">k</span>
               <span className="blast">i</span>
@@ -45,7 +68,7 @@ const Title = () => {
           </div>
         </h1>
         <p className="gray-text">Frontend developer</p>
-        <Link to='/contacts' className="contact">
+        <Link to="/contacts" className="contact">
           <div>Contact me</div>
         </Link>
       </div>

@@ -1,9 +1,11 @@
-.about-page{
-    p, strong{
-        letter-spacing: normal;
-    }
-    strong:hover{
-        display: flex;
-        transform: translateY(3px);
-    }
+.about-page {
+  margin-bottom: -100px;
+  p,
+  strong {
+    letter-spacing: normal;
+  }
+  strong:hover {
+    display: flex;
+    transform: translateY(3px);
+  }
 }

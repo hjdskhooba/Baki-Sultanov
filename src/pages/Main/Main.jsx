@@ -3,6 +3,7 @@ import Title from "./Title";
 import SeePortfolio from "./SeePortfolio";
 import Projects from "../components/Projects";
 import About from "../components/About";
+import Skills from "../components/Skills";
 
 const Main = () => {
   return (
@@ -11,6 +12,7 @@ const Main = () => {
       <SeePortfolio />
       <Projects />
       <About />
+      <Skills />
     </div>
   );
 };

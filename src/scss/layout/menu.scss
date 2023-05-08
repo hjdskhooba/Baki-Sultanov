@@ -40,7 +40,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     padding: 2rem 0;
-    .menu-name{
+    .menu-name {
       font-size: 2.3rem;
     }
     &-logo {
@@ -54,7 +54,7 @@
       overflow: hidden;
     }
     .name-sub {
-      color: #A5A5A5;
+      color: #a5a5a5;
       font-size: 1.2rem;
       margin-top: 1rem;
     }
@@ -89,12 +89,12 @@
       transition: color 0.3s, background-color 0.3s;
     }
   }
-  .svgshka3{
+  .svgshka3 {
     zoom: 1.4;
     max-width: min-content;
     transform: translateY(-0.9px);
   }
-  .social{
+  .social {
     color: #909096;
     margin: 0;
     padding: 13px 0 0 0;
@@ -105,17 +105,23 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     height: 20rem;
-    li{
-        text-align: center;
-        a{
-            padding: 2rem 7px;
-            svg{
-                width: 1.5rem;
-            }
+    li {
+      text-align: center;
+      a {
+        padding: 2rem 7px;
+        svg {
+          width: 1.5rem;
         }
+      }
     }
   }
   @media (max-width: 1300px) {
+    display: none;
+  }
+}
+.menu.mobile {
+  @media (max-width: 1300px) {
+    display: block;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -130,7 +136,7 @@
     -webkit-transition: opacity 0s 0.4s, z-index 0s 0.7s;
     -o-transition: opacity 0s 0.4s, z-index 0s 0.7s;
     transition: opacity 0.4s, z-index 0.7s;
-    &.open{
+    &.open {
       z-index: 491;
       opacity: 1;
     }
