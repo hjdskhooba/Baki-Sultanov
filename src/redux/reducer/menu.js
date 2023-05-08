@@ -1,16 +1,16 @@
-const defaultState = {open: false};
+const defaultState = { open: false };
 
-export default (state = defaultState, action)=>{
-    switch(action.type){
+export default (state = defaultState, action) => {
+  switch (action.type) {
     case "TOGGLE_MENU":
-        return {...state, open: !state.open}
+      return { ...state, open: !state.open };
     default:
-        return state;
-    }
-}
+      return state;
+  }
+};
 
 export const openMenu = () => {
-    return(dispatch) => {
-        return dispatch({type: "TOGGLE_MENU"})
-    }
-}
+  return (dispatch) => {
+    return dispatch({ type: "TOGGLE_MENU" });
+  };
+};

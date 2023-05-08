@@ -1,5 +1,6 @@
 import React from "react";
 import nameFirstLetter from "../../assets/main/title/channels4_profile-removebg-preview.png";
+import { Link } from "react-router-dom";
 
 const Title = () => {
   let letter = document.querySelectorAll(".blast");
@@ -44,9 +45,9 @@ const Title = () => {
           </div>
         </h1>
         <p className="gray-text">Frontend developer</p>
-        <a className="contact">
+        <Link to='/contacts' className="contact">
           <div>Contact me</div>
-        </a>
+        </Link>
       </div>
       <div className="scroll-down">
         {" "}
@@ -92,4 +93,4 @@ const Title = () => {
   );
 };
 
-export default Title
+export default Title;

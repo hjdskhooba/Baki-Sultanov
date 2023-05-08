@@ -1,29 +1,33 @@
 import React from "react";
 import nameFirstLetter from "../assets/main/title/channels4_profile-removebg-preview.png";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
 
 const Menu = () => {
+  const dispatch = useDispatch();
   const menuIsOpen = useSelector((state) => state.menu).open;
+  const closeMenu = () => dispatch(openMenu());
   return (
     <div className={`menu ${menuIsOpen ? "open" : "closed"}`}>
       <div className="menu__title">
-        <img src={nameFirstLetter} alt="" className="menu__title-logo" />
+        <Link to="/" onClick={closeMenu}>
+          <img src={nameFirstLetter} alt="" className="menu__title-logo" />
+        </Link>
         <h2 className="menu-name">Baki</h2>
         <p className="name-sub">Web developer</p>
       </div>
       <nav className="menu__navigation">
         {" "}
-        <Link rel="about" to="/about-me">
+        <Link rel="about" to="/about" onClick={closeMenu}>
           About
         </Link>{" "}
-        <Link rel="skills" to="/my-skills">
+        <Link rel="skills" to="/skills" onClick={closeMenu}>
           My Skills
         </Link>{" "}
-        <Link rel="work" to="/projects">
+        <Link rel="work" to="/projects" onClick={closeMenu}>
           Work
         </Link>{" "}
-        <Link rel="contact" to="/contact-me">
+        <Link rel="contact" to="/contacts" onClick={closeMenu}>
           Contact
         </Link>{" "}
       </nav>
