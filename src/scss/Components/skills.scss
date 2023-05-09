@@ -67,4 +67,9 @@
     padding-top: 7rem;
     padding-left: 1rem;
   }
+  @media (max-width: 700px) {
+    .blast-root{
+      font-size: 22.2vw;
+    }
+  }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import nameFirstLetter from "../assets/main/title/channels4_profile-removebg-preview.png";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { openMenu } from "../redux/reducer/menu";
 
 const MenuMobile = () => {
   const dispatch = useDispatch();

@@ -16,7 +16,7 @@ const Menu = () => {
         </div>
         <nav className="menu__navigation">
           {" "}
-          <Link rel="about" to="/about">
+          <Link to="/about">
             About
           </Link>{" "}
           <Link rel="skills" to="/skills">

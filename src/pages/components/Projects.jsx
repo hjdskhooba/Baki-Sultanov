@@ -20,6 +20,9 @@ const Projects = () => {
 
   return (
     <>
+    <br />
+    <br />
+    <br />
       <div
         className="app"
         style={{ width: "100%", justifyContent: "center", textAlign: "center" }}

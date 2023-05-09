@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -51,9 +52,9 @@ const About = () => {
           </p>
           <br />
           <strong>
-            <a href="/contacts" rel="contact">
+            <Link to="/contacts" rel="contact">
               Contact me
-            </a>
+            </Link>
           </strong>
           <div className="clear"></div>
         </div>

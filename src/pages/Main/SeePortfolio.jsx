@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SeePortfolio = () => {
   return (
@@ -61,13 +62,13 @@ const SeePortfolio = () => {
         </div>
         <div>
           {" "}
-          <a rel="work" href="/portfolio/" className="flat-button">
+          <Link rel="work" to="/portfolio/" className="flat-button">
             <div>
               {" "}
               <span className="bg"></span> <span className="base"></span>{" "}
               <span className="text">See more!</span>
             </div>{" "}
-          </a>
+          </Link>
         </div>
       </div>
     </section>
