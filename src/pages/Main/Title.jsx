@@ -1,5 +1,6 @@
 import React from "react";
 import nameFirstLetter from "../../assets/main/title/channels4_profile-removebg-preview.png";
+import cv from "../../cv.pdf";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -11,6 +12,7 @@ const Title = () => {
     setRotate(Math.random() * 500 - 222);
     setMove(Math.random() * 360);
   };
+  console.log(cv)
   return (
     <section className="main__title">
       <div className="text-zone">
@@ -68,7 +70,7 @@ const Title = () => {
           </div>
         </h1>
         <p className="gray-text">Frontend developer</p>
-        <a className="contact" href="src/cv.pdf" download="src/cv.pdf">Download CV</a>
+        <a className="contact" href={cv} download="cv.pdf">Download CV</a>
       </div>
       <div className="scroll-down">
         {" "}
