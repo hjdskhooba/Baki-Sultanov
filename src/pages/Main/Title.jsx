@@ -1,6 +1,7 @@
 import React from "react";
 import nameFirstLetter from "../../assets/main/title/channels4_profile-removebg-preview.png";
 import { Link } from "react-router-dom";
+import cv from "../../Султанов Байгелди Абдыхашимович (2).pdf";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -69,7 +70,7 @@ const Title = () => {
         </h1>
         <p className="gray-text">Frontend developer</p>
         <Link to="/" className="contact">
-          <a href="../../Султанов Байгелди Абдыхашимович (2).pdf" download="">Download CV</a>
+          <a href={cv} download="">Download CV</a>
         </Link>
       </div>
       <div className="scroll-down">
