@@ -69,7 +69,7 @@ const Title = () => {
         </h1>
         <p className="gray-text">Frontend developer</p>
         <Link to="/contacts" className="contact">
-          <div>Contact me</div>
+          <a href="../../cv" download="">Download CV</a>
         </Link>
       </div>
       <div className="scroll-down">
