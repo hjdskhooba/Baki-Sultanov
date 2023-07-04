@@ -68,7 +68,7 @@ const Title = () => {
           </div>
         </h1>
         <p className="gray-text">Frontend developer</p>
-        <Link to="/contacts" className="contact">
+        <Link to="/" className="contact">
           <a href="../../Султанов Байгелди Абдыхашимович (2).pdf" download="">Download CV</a>
         </Link>
       </div>
