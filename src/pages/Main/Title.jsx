@@ -1,7 +1,6 @@
 import React from "react";
 import nameFirstLetter from "../../assets/main/title/channels4_profile-removebg-preview.png";
 import { Link } from "react-router-dom";
-import cv from "../../Султанов Байгелди Абдыхашимович (2).pdf";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -69,9 +68,7 @@ const Title = () => {
           </div>
         </h1>
         <p className="gray-text">Frontend developer</p>
-        <Link to="/" className="contact">
-          <a href={cv} download="">Download CV</a>
-        </Link>
+        <a className="contact" href="../../cv.png" download="cv.png">Download CV</a>
       </div>
       <div className="scroll-down">
         {" "}
