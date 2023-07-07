@@ -10,7 +10,7 @@ const defaultState = [
     isOpen: false,
     image:
       "https://millor-shop.ru/wp-content/themes/millornew/img/icons/logo.png",
-    link: "millor-blush.vercel.app",
+    link: "https://millor-blush.vercel.app",
     example: gif1,
     title: "Online coffee shop",
     description:
