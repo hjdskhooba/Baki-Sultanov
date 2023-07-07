@@ -11,21 +11,11 @@ const defaultState = [
     isOpen: false,
     image:
       "https://millor-shop.ru/wp-content/themes/millornew/img/icons/logo.png",
-    link: "https://miller-shop.netlify.app/",
+    link: "millor-blush.vercel.app",
     example: gif1,
     title: "Online coffee shop",
     description:
       "A website where people can order coffee drinks to go from a coffee shop. Users can order coffee as a guest or use their created account. Authenticated users can also view their previous orders.",
-  },
-  {
-    id: 2,
-    isOpen: false,
-    image: "https://oceania.ru/upload/iblock/c2c/800x370_adidas_stansmith.jpg",
-    link: "https://pet-project-sneakers.vercel.app/",
-    example: gif2,
-    title: "Online sneakers shop",
-    description:
-      'Sneakers-shop - Javascript app with registration and admin panel.\n No frameworks, only JS. To start this project - first you have to start our json-database. Run " npm start " in terminal Then run index.html file to open project in browser',
   },
   {
     id: 3,
@@ -46,16 +36,6 @@ const defaultState = [
     title: "Online stuff shop",
     description:
       "stuff-shop - Is an online-shop with lot's of cool stuff. In this project, as a package manager I use 'pnpm' So run \"pnpm i\" to install all dependencies.",
-  },
-  {
-    id: 5,
-    isOpen: false,
-    image:
-      "https://shymbulakhotel.kz/wp-content/uploads/2022/12/screenshot.png",
-    link: "https://vue-weather-app-three-ecru.vercel.app/",
-    example: gif5,
-    title: "Weather app",
-    description: "Vue weather app - Vue.js weather app for Almaty",
   },
   {
     id: 6,
